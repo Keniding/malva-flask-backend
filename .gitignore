@@ -1,0 +1,52 @@
+# Ignorar el archivo .env que contiene variables de entorno sensibles
+.env
+
+# Ignorar directorios de bytecode de Python
+__pycache__/
+*.py[cod]
+
+# Ignorar archivos de paquetes y logs
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.seed
+
+# Ignorar directorios de entornos virtuales
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Ignorar archivos de configuración de IDE específicos de desarrollador
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+# Ignorar archivos de paquetes
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+bin/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+wheels/
+share/python-wheels/
+*.egg
+.cache
+*.pyc
+
+# Ignorar archivos de configuración del sistema operativo
+.DS_Store
+Thumbs.db

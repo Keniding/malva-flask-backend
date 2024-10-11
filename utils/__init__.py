@@ -1,0 +1,1 @@
+# Aquí puedes importar o definir funciones de utilidad generales
