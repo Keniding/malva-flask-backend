@@ -4,7 +4,7 @@ from datetime import datetime
 class Reserva(db.Model):
     __tablename__ = 'reservas'
     id_reserva = db.Column(db.Integer, primary_key=True)
-    id_propietario = db.Column(db.Integer)
+    dni = db.Column(db.String)  # Cambia a String si el DNI incluye letras
     id_area = db.Column(db.Integer)
     fecha_reserva = db.Column(db.Date)
     hora_inicio = db.Column(db.Time)
@@ -15,7 +15,7 @@ class Reserva(db.Model):
     def to_dict(self):
         return {
             'id_reserva': self.id_reserva,
-            'id_propietario': self.id_propietario,
+            'dni': self.dni,  # Actualiza aquí también
             'id_area': self.id_area,
             'fecha_reserva': self.fecha_reserva.isoformat(),
             'hora_inicio': self.hora_inicio.isoformat(),
